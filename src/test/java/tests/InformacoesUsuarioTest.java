@@ -69,7 +69,7 @@ public class InformacoesUsuarioTest {
 
         //Esperar 10 segundos
         //try{Thread.sleep(10000);} catch (InterruptedException ex){}
-        //teste para upload no git 4
+        //teste para upload no git 5
     }
     @After
     public void tearDown(){

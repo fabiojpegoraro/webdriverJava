@@ -16,7 +16,8 @@ public class InformacoesUsuarioTest {
     @Before
     public void setUp(){
         //Abrindo navegador
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\fabio\\driver\\chromedriver.exe");
+        //System.setProperty("webdriver.chrome.driver", "C:\\Users\\fabio\\driver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\fabio.pegoraro\\Drivers\\chromedriver.exe");
         navegador = new ChromeDriver();
         navegador.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
         //navegando para a página do Taskit
@@ -53,8 +54,6 @@ public class InformacoesUsuarioTest {
 
         navegador.findElement(By.xpath("//*[@id=\"moredata\"]/div[2]/button")).click();
         try{Thread.sleep(2000);} catch (InterruptedException ex){}
-
-        navegador.findElement()
 
         //Validar que dentro do elemento com class "me" está o texto "Hi, Julio"
         //WebElement me = navegador.findElement(By.className("me"));
